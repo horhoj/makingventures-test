@@ -1,5 +1,7 @@
 # тестовое задание на создание системы фильтрации
 
+задание: https://makingventures.notion.site/makingventures/0c47fc9bb0c644c09302aa0b6995abce
+
 Зависимости: node 18
 
 # запуск тестов
