@@ -1,0 +1,25 @@
+version: "3"
+
+#networks:
+#  internal:
+#    driver: bridge
+#    ipam:
+#      driver: default
+#      config:
+#        - subnet: 192.168.220.0/28
+
+services:
+  node:
+    build:
+      context: docker/nodejs
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=development
+      #- NODE_ENV=production
+    volumes:
+      - ./:/home/node/app
+    #ports:
+    #  - "3000:3000"
+    #tty: true
+
